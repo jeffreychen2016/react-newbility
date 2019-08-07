@@ -1,0 +1,26 @@
+.tag {
+    height: 15px;
+    padding: 1px 5px 0 5px;
+    line-height: normal;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-radius: 36px;
+    color: #fff;
+}
+
+.blue {
+    background-color: #9FD2D6;
+}
+
+.orange {
+    background-color: #FF8601;
+}
+
+.purple {
+    background-color: #8154EF;
+}
+
+.red {
+    background-color: #FF4E4E;
+}
