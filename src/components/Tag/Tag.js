@@ -2,15 +2,19 @@ import React from 'react';
 import './Tag.css';
 import PropTypes from 'prop-types';
 
-const tag = (props) => {
-    return (
-        <span className={`${props.color} tag`}>{props.text}</span>
-    );
+class Tag extends React.Component {
+    render() {
+        return (
+            <span className={`${this.props.color} tag`}>
+                {this.props.text}
+            </span>
+        )
+    };
 };
 
-tag.propTypes = {
+Tag.propTypes = {
     text: PropTypes.string,
     color: PropTypes.string.isRequired
 };
 
-export default tag;
+export default Tag;
