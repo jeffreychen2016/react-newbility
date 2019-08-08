@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Button } from '@storybook/react/demo';
 import Tag from '../src/components/Tag/Tag';
+import Tooltip from '../src/components/Tooltip/Tooltip';
 
 storiesOf('Button', module)
   .add('with text', () => (
@@ -35,4 +36,9 @@ storiesOf('Tag', module)
       text='C#'
       color='red'
     />
+  ));
+
+storiesOf('Tooltip', module)
+  .add('normal', () => (
+    <Tooltip />
   ));
