@@ -4,6 +4,8 @@ import { Button } from '@storybook/react/demo';
 import Tag from '../src/components/Tag/Tag';
 import Tooltip from '../src/components/Tooltip/Tooltip';
 
+import WithTooltip from '../src/components/hocs/withTooltip';
+
 storiesOf('Button', module)
   .add('with text', () => (
     <Button>Hello Button</Button>
@@ -36,7 +38,11 @@ storiesOf('Tag', module)
       text='C#'
       color='red'
     />
-  ));
+  ))
+  .add('withTooltip', () => {
+    const TooltippedTag = WithTooltip(Tag);
+    return <TooltippedTag color='blue' text='this is HOC'/>;
+  });
 
 storiesOf('Tooltip', module)
   .add('normal', () => (
